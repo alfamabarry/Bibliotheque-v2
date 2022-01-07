@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Style.css">
+    <title>BIBLIOTHQUE V2
+    </title>
+</head>
+<body>
+    <div class="noprint">
+    <h1>BIBLIOTHEQUE V2</h1>
+	<hr>
+			<div class="employee-form">
+                <form onsubmit="event.preventDefault();onFormSubmit();">
+                    <div>
+                        <label>Titre</label>
+                        <input type="text" name="Titre" maxlength="30" placeholder="Titre du livre" id="titre" required>
+                    </div>
+                    <div>
+                        <label>Auteur</label>
+                        <input type="text" name="auteur" maxlength="30" placeholder="Nom de l'auteur" id="auteur" required>
+                    </div>
+                    <div>
+                        <label>Prix</label>
+                        <input type="text" name="prix" maxlength="30" placeholder="Prix du livre" id="prix" required>
+                    </div>
+                    <div>
+                        <label>emailAuteur</label>
+                        <input type="text" name="email" placeholder="emailAuteur" id="emailAuteur" required>
+                    </div>
+
+                    <div>
+                        <div>
+                        <label>Date de publication</label>
+                        <input type="text" name="date" id="date" required>
+                    </div>
+                    <div>
+                           <label for="langue">langue</label> 
+                       <input type="text" name="Langue" id="langue" list="listlangue">
+                       <datalist id="listlangue">
+                        <option value="Arabe">
+                        <option value="Français">
+                        <option value="Anglais">
+                        <option value="Espagnol">
+
+                        </datalist>
+
+                
+
+                    </div>
+
+                        <div id="radiobutton">
+                        
+                        <input type="radio"name="type" id="type1" value="Roman"  required>
+                        <label >roman</label>
+                        <input type="radio"name="type" id="type2" value="Essai"  required>
+                        <label >Essais</label>
+                        <input type="radio"name="type" id="type3" value="Bande-dessinee"  required>
+                        <label >Bande-dessinee</label>
+                        
+                     
+                    
+                    
+                    </div>
+
+                    </div>
+                    <div  class="form-action-buttons">
+                        <input type="submit" value="Submit">
+                    </div>
+                </form>
+		</div>
+    </div>
+		<br/>
+		<div id="employees-table">
+                <table class="list" id="employeeList">
+                    <thead>
+                        <tr>
+                            <th>Titre</th>
+                            <th>Auteur</th>
+                            <th>Prix</th>
+                            <th>email</th>
+                            <th>Date de publication</th>
+                            <th>langue</th>
+                            <th>type</th>
+                            <th>Actions</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+        </div>
+        <h4 id="data13"></h4>
+        <br/><br>
+        <div id='btn1'>
+            <button id='btn'>Print</button>
+            
+        </div>
+<script src="scrip.js"></script>
+</body>
+</html>

@@ -1,0 +1,132 @@
+body
+{background-image: linear-gradient(to top, #fbc2eb 0%, #a6c1ee 100%) ;
+    color: rgb(230, 240, 241);
+    font-size: 15px;
+
+}
+h1{ text-align: center;}
+.employee-form {
+    border-style: solid;
+    padding: 10px;
+    margin: auto;
+    width: 50%;
+    font-size: 2em;
+    
+}
+#date{background-color: rgb(231,212,125);
+border: 1px solid;
+border-radius: 8px;width: 100%;
+padding: 8px 20px;
+margin: 8px 0;
+display: inline-block;
+border: 1px solid rgb(27, 34, 34);
+border-radius: 8px;
+box-sizing: border-box;
+background-color: rgb(231, 212, 125);
+}
+
+.employees-table {
+    border-style: solid;
+    padding: 20px;
+    margin: auto;
+    width: 70%;
+    font-size: 1.5em;
+    
+
+}
+
+body > table{
+    width: 80%;
+    
+
+    
+}
+
+table{
+    border-collapse: collapse;
+}
+table.list{
+    width:100%;
+}
+
+td, th {
+    border: 2px solid #141010;
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even),table.list thead>tr {
+    background-color: #33d3e2;
+}
+
+input[type=text], input[type=number] {
+    width: 100%;
+    padding: 8px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid rgb(27, 34, 34);
+    border-radius: 8px;
+    box-sizing: border-box;
+    background-color: rgb(231, 212, 125);
+}
+
+input[type=submit] {
+    width: 30%;
+    background-color: rgb(136, 202, 60);
+    color: white;
+    padding: 10px 18px;
+    /* margin: 0px 0; */
+    border: none;
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+form div.form-action-buttons{
+    text-align: right;
+}
+
+a{
+    cursor: pointer;
+    text-decoration: underline;
+    color: #0000ee;
+    margin-right: 4px;
+}
+
+label.validation{
+    color:   red;
+    margin-left: 5px;
+}
+
+.hide{
+    display:none;
+}
+
+
+#btn1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#btn {
+    padding:12px 30px;
+    background-color: rgb(136, 202, 60);
+    color: white;
+    border: none;
+    border-radius: 13px;
+    font-size: 18px;
+    margin-bottom: 20px;
+    cursor: pointer;
+}
+
+#btn:hover {
+    background-color: rgb(122, 63, 42);
+    transition: all 0.4s ease-in;
+}
+
+
+
+@media print {
+    .noprint {
+        display: none;
+    }
+}
